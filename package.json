@@ -8,5 +8,13 @@
   "private": false,
   "scripts": {
     "start": "node server/index.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiprrassetyo/Challange4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adiprrassetyo/Challange4/issues"
+  },
+  "homepage": "https://github.com/adiprrassetyo/Challange4#readme"
 }
