@@ -82,7 +82,11 @@ section {
   color: #fff;
   font-size: 14px;
   padding: 8px 12px;
-  border-radius: 2px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .btn.selected {
@@ -174,14 +178,6 @@ section {
   box-shadow: none;
 }
 
-.people-icon {
-  z-index: 100;
-  position: absolute;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
-}
-
 /* .show {
   display: block;
 } */
@@ -205,7 +201,9 @@ section {
   width: 100%;
   height: fit-content;
   display: flex;
-  padding-top: 10%;
+  padding-top: 1%;
+  padding-right: 3%;
+  padding-left: 3%;
   justify-content: space-around;
   flex-flow: wrap;
   text-align: left;

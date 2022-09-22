@@ -46,7 +46,6 @@ p {
 
 header {
   background-color: #f1f3ff;
-  margin-bottom: 100px;
 }
 
 section {
@@ -83,7 +82,11 @@ section {
   color: #fff;
   font-size: 14px;
   padding: 8px 12px;
-  border-radius: 2px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .btn.selected {
@@ -231,6 +234,17 @@ footer {
   transform: rotate(180deg);
 }
 /* End Carousel */
+
+.cars-box-search {
+  width: 80%;
+  margin-top: -55px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px 2px #ebebeb;
+  font-size: 12px;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+}
 
 /* Banner */
 .cta-banner {
