@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/adiprrassetyo/Challange4/issues"
   },
-  "homepage": "https://github.com/adiprrassetyo/Challange4#readme"
+  "homepage": "https://github.com/adiprrassetyo/Challange4#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
