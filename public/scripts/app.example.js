@@ -1,3 +1,4 @@
+// Class App
 class App {
   constructor() {
     this.clearButton = document.getElementById("clear-btn");
@@ -5,6 +6,7 @@ class App {
     this.carContainerElement = document.getElementById("cars-container");
   }
 
+  // Async Await Button
   async init() {
     await this.load();
 
@@ -13,15 +15,19 @@ class App {
     this.loadButton.onclick = this.run;
   }
 
+  // Function Filter car
   run = () => {
     this.clear();
     const data = this.filterCar();
 
+    // Jika data yang di cari tidak ditemukan
     if (data.length == 0 || data == undefined) {
       const node = document.createElement("div");
-      node.innerHTML = "<h1> No Car Available </h1>";
+      node.innerHTML = `<div class="alert alert-danger mt-2" role="alert">Data Tidak Ditemukan
+    </div>`;
       this.carContainerElement.appendChild(node);
     } else {
+      // jika di temukan
       data.forEach((car) => {
         const node = document.createElement("div");
         node.innerHTML = car.render();
@@ -30,6 +36,7 @@ class App {
     }
   };
 
+  // method filterCar
   filterCar() {
     const driver = document.getElementById("driver").value;
     const date = document.getElementById("date").value;
@@ -80,6 +87,7 @@ class App {
   };
 }
 
+// function format rupiah
 function rupiah(number) {
   return new Intl.NumberFormat("id-ID", {
     style: "currency",
@@ -87,6 +95,7 @@ function rupiah(number) {
   }).format(number);
 }
 
+// function format time date
 function getDateTimeNow() {
   var today = new Date();
   var date =
